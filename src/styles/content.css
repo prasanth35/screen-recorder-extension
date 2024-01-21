@@ -1,0 +1,32 @@
+.video-settings {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.option-selector{
+    border-radius: 7px;
+    border: 2px solid;
+    height: 50px;
+    font-size: large;
+    color: blueviolet;
+}
+
+.record-button {
+    height: 35px;
+    background: rgb(42, 123, 300);
+    border: 0px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+}
+
+.recording-screen {
+    display: none; 
+    flex-direction: column;
+    gap: 20px;
+}

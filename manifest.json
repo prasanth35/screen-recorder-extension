@@ -1,0 +1,26 @@
+{
+    "manifest_version" : 3,
+    "name" : "Screen Recorder",
+    "description" : "Extension to record the screen",
+    "action" : {
+        "chrome_url_overrides": {
+            "newtab": "src/index.html"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "contentSettings",
+        "storage",
+        "downloads",
+        "desktopCapture",
+        "scripting",
+        "alarms"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "version" : "0.0.1",
+    "background": {
+        "service_worker": "background.js"
+    }
+}

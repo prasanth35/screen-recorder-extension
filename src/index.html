@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script/tab.js" defer></script>
+  <script src="script/record.js" defer></script>
+  <link href="styles/tabs.css" rel="stylesheet">
+  <link href="styles/content.css" rel="stylesheet">
+  <title>Screen Recorder</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="home-screen" class="home-screen">
+      <div id="tabs-header">
+        <ul class="tabs">
+          <li value="0" class="active tab">Screen</li>
+          <li value="1" class="tab">Screen + Webcam</li>
+        </ul>
+      </div>
+      <div id="tabs-content" class="tab-content">
+        <h4>Audio and Video Settings</h4>
+        <div class="video-settings">
+          <select class="option-selector" id="video-format-selector"></select>
+          <select class="option-selector" id="video-quality-selector"></select>
+          <select class="option-selector" id="audio-format-selector"></select>
+        </div>
+
+    </div>
+  </div>
+  <div id="mediaWrapper"></div>
+  <video id="recordedVideo" style="display: none;"></video>
+
+  <div style="display: flex; flex:1; flex-direction: column; margin-top: 10px;">
+    <button id="record-button" class="record-button">Record</button>
+    <button id="stop-recording" style="display: none;" class="record-button">Stop Recording</button>
+    <button id="download-recording" style="display: none;" class="record-button">Download Recording</button>
+    <!-- <button id="test" class="record-button">Start Recording</button> -->
+  </div>
+
+  </div>
+</body>
+</html>
